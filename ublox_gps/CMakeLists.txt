@@ -68,6 +68,8 @@ include_directories(include
 add_library(ublox_gps
    src/gps.cpp
 )
+add_dependencies(ublox_gps ${ublox_msgs_EXPORTED_TARGETS})
+target_link_libraries(ublox_gps ${Boost_LIBRARIES} ${catkin_LIBRARIES})
 
 ## Declare a cpp executable
 add_executable(ublox_gps_node src/node.cpp)
