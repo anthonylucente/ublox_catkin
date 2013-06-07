@@ -1,0 +1,28 @@
+<package>
+  <name>ublox</name>
+  <version>1.0.0</version>
+  <description>
+        Provides a ublox_gps node for uBlox GPS receivers and message and serialization packages for the binary UBX protocol: http://ros.org/wiki/ublox
+  </description>
+  <maintainer email="jane.doe@example.com">Jane Doe</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://www.ros.org/wiki/ublox</url>
+  <url type="repository">https://github.com/tu-darmstadt-ros-pkg/ublox</url>
+  <url type="bugtracker">https://github.com/tu-darmstadt-ros-pkg/ublox/issues</url>
+
+  <!-- Author tags are optional, mutiple are allowed, one per tag -->
+  <!-- Authors do not have to be maintianers, but could be -->
+  <!-- Example: -->
+  <!-- <author email="jane.doe@example.com">Jane Doe</author> -->
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>ublox_gps</run_depend>
+  <run_depend>ublox_msgs</run_depend>
+  <run_depend>ublox_serialization</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
